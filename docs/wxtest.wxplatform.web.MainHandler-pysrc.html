@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>wxtest.wxplatform.web.MainHandler</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="wxtest-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://telecomtest.duapp.com">&#24494;&#20449;&#20844;&#20247;&#36134;&#21495;&#27979;&#35797;</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="wxtest-module.html">Package&nbsp;wxtest</a> ::
+        <a href="wxtest.wxplatform-module.html">Package&nbsp;wxplatform</a> ::
+        <a href="wxtest.wxplatform.web-module.html">Package&nbsp;web</a> ::
+        Module&nbsp;MainHandler
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="wxtest.wxplatform.web.MainHandler-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="wxtest.wxplatform.web.MainHandler-module.html">Module wxtest.wxplatform.web.MainHandler</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment"># -*- coding:utf-8 -*-</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">"""web&#26681;&#24212;&#29992;</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">@author: U{jinlei&lt;mailto:jinlei3@asiainfo-linkage.com&gt;}</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">@date: 2013-08-01 16:29:57</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">@Copyright: asiainfo-linkage 2013</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">@version: $Revision$</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">sys</tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt class="py-name">wsgi</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt class="py-name">sys</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-string">"../"</tt><tt class="py-op">)</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-op">.</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Module wxtest.wxplatform.global_settings=wxtest.wxplatform.global_settings-module.html"><a title="wxtest.wxplatform.global_settings" class="py-name" href="#" onclick="return doclink('link-0', 'global_settings', 'link-0');">global_settings</a></tt> <tt class="py-keyword">import</tt> <tt class="py-op">*</tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-op">.</tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Module wxtest.wxplatform.logger=wxtest.wxplatform.logger-module.html"><a title="wxtest.wxplatform.logger" class="py-name" href="#" onclick="return doclink('link-1', 'logger', 'link-1');">logger</a></tt> <tt class="py-keyword">import</tt> <tt id="link-2" class="py-name" targets="Variable wxtest.wxplatform.logger.sm_logger=wxtest.wxplatform.logger-module.html#sm_logger,Variable wxtest.wxplatform.web.MainHandler.sm_logger=wxtest.wxplatform.web.MainHandler-module.html#sm_logger,Variable wxtest.wxplatform.web.WXInterfaceHandler.sm_logger=wxtest.wxplatform.web.WXInterfaceHandler-module.html#sm_logger"><a title="wxtest.wxplatform.logger.sm_logger
+wxtest.wxplatform.web.MainHandler.sm_logger
+wxtest.wxplatform.web.WXInterfaceHandler.sm_logger" class="py-name" href="#" onclick="return doclink('link-2', 'sm_logger', 'link-2');">sm_logger</a></tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"> </tt>
+<a name="MainHandler"></a><div id="MainHandler-def"><a name="L18"></a><tt class="py-lineno">18</tt> <a class="py-toggle" href="#" id="MainHandler-toggle" onclick="return toggle('MainHandler');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="wxtest.wxplatform.web.MainHandler.MainHandler-class.html">MainHandler</a><tt class="py-op">(</tt><tt class="py-base-class">tornado</tt><tt class="py-op">.</tt><tt class="py-base-class">web</tt><tt class="py-op">.</tt><tt class="py-base-class">RequestHandler</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="MainHandler-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="MainHandler-expanded"><a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line">        <tt class="py-docstring">"""web&#26681;&#24212;&#29992;"""</tt> </tt>
+<a name="MainHandler.get"></a><div id="MainHandler.get-def"><a name="L20"></a><tt class="py-lineno">20</tt> <a class="py-toggle" href="#" id="MainHandler.get-toggle" onclick="return toggle('MainHandler.get');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="wxtest.wxplatform.web.MainHandler.MainHandler-class.html#get">get</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="MainHandler.get-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="MainHandler.get-expanded"><a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">                <tt class="py-docstring">"""web.cfg&#30340;MainHandler&#23601;&#26159;&#24403;&#21069;&#26681;&#24212;&#29992;&#30340;&#27169;&#26495;"""</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">                <tt id="link-3" class="py-name"><a title="wxtest.wxplatform.logger.sm_logger
+wxtest.wxplatform.web.MainHandler.sm_logger
+wxtest.wxplatform.web.WXInterfaceHandler.sm_logger" class="py-name" href="#" onclick="return doclink('link-3', 'sm_logger', 'link-2');">sm_logger</a></tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Method wxtest.wxplatform.logger.BAElogger.debug()=wxtest.wxplatform.logger.BAElogger-class.html#debug"><a title="wxtest.wxplatform.logger.BAElogger.debug" class="py-name" href="#" onclick="return doclink('link-4', 'debug', 'link-4');">debug</a></tt><tt class="py-op">(</tt><tt class="py-string">"****"</tt><tt class="py-op">)</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">render</tt><tt class="py-op">(</tt> <tt id="link-5" class="py-name" targets="Variable wxtest.mainServer.TEMPLATES=wxtest.mainServer-module.html#TEMPLATES,Variable wxtest.wxplatform.MessageConfigParser.TEMPLATES=wxtest.wxplatform.MessageConfigParser-module.html#TEMPLATES,Variable wxtest.wxplatform.MessageManage.TEMPLATES=wxtest.wxplatform.MessageManage-module.html#TEMPLATES,Variable wxtest.wxplatform.WebConfigParser.TEMPLATES=wxtest.wxplatform.WebConfigParser-module.html#TEMPLATES,Variable wxtest.wxplatform.global_settings.TEMPLATES=wxtest.wxplatform.global_settings-module.html#TEMPLATES,Variable wxtest.wxplatform.query.ProductInfo.TEMPLATES=wxtest.wxplatform.query.ProductInfo-module.html#TEMPLATES,Variable wxtest.wxplatform.web.MainHandler.TEMPLATES=wxtest.wxplatform.web.MainHandler-module.html#TEMPLATES,Variable wxtest.wxplatform.web.WXInterfaceHandler.TEMPLATES=wxtest.wxplatform.web.WXInterfaceHandler-module.html#TEMPLATES"><a title="wxtest.mainServer.TEMPLATES
+wxtest.wxplatform.MessageConfigParser.TEMPLATES
+wxtest.wxplatform.MessageManage.TEMPLATES
+wxtest.wxplatform.WebConfigParser.TEMPLATES
+wxtest.wxplatform.global_settings.TEMPLATES
+wxtest.wxplatform.query.ProductInfo.TEMPLATES
+wxtest.wxplatform.web.MainHandler.TEMPLATES
+wxtest.wxplatform.web.WXInterfaceHandler.TEMPLATES" class="py-name" href="#" onclick="return doclink('link-5', 'TEMPLATES', 'link-5');">TEMPLATES</a></tt><tt class="py-op">[</tt><tt class="py-string">'MainHandler'</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt id="link-6" class="py-name" targets="Variable wxtest.wxplatform.MessageManage.NewsArticle.title=wxtest.wxplatform.MessageManage.NewsArticle-class.html#title,Variable wxtest.wxplatform.MessageManage.PushMsg.title=wxtest.wxplatform.MessageManage.PushMsg-class.html#title"><a title="wxtest.wxplatform.MessageManage.NewsArticle.title
+wxtest.wxplatform.MessageManage.PushMsg.title" class="py-name" href="#" onclick="return doclink('link-6', 'title', 'link-6');">title</a></tt><tt class="py-op">=</tt><tt class="py-string">"&#30005;&#20449;&#24494;&#20449;&#26381;&#21153;&#24179;&#21488;"</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="wxtest-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://telecomtest.duapp.com">&#24494;&#20449;&#20844;&#20247;&#36134;&#21495;&#27979;&#35797;</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Aug  7 11:37:13 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

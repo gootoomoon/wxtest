@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>wxtest.mainServer</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="wxtest-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://telecomtest.duapp.com">&#24494;&#20449;&#20844;&#20247;&#36134;&#21495;&#27979;&#35797;</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="wxtest-module.html">Package&nbsp;wxtest</a> ::
+        Module&nbsp;mainServer
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="wxtest.mainServer-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module mainServer</h1><p class="nomargin-top"><span class="codelink"><a href="wxtest.mainServer-pysrc.html">source&nbsp;code</a></span></p>
+<p>&#24494;&#20449;WEB&#26381;&#21153;&#24179;&#21488;</p>
+
+<hr />
+<div class="fields">      <p><strong>Author:</strong>
+        <a href="mailto:jinlei3@asiainfo-linkage.com" 
+        target="_top">jinlei</a>
+      </p>
+      <p><strong>Date:</strong>
+        2013-08-01 15:23:54
+      </p>
+      <p><strong>Copyright:</strong>
+        asiainfo-linkage 2013
+      </p>
+      <p><strong>Version:</strong>
+        $Revision$
+        <p>&#26412;&#31995;&#32479;&#21516;&#26102;&#25903;&#25345;tornado&#21644;&#30334;&#24230;&#30340;BAE&#12290;&#24403;&#21069;&#25991;&#20214;&#26159;&#20351;&#29992;tornado&#24314;&#31435;&#30340;WEB&#26381;&#21153;&#24179;&#21488;</p>
+        <ol start="1">
+          <li>
+            <b>&#36816;&#34892;WEB&#26381;&#21153;&#24179;&#21488;&#21629;&#20196;</b>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>python mainServer</pre>
+          </li>
+          <li>
+            <b>web&#24212;&#29992;&#37197;&#32622;</b>
+            <ul>
+              <li>
+                <b>&#37197;&#32622;&#25991;&#20214;</b>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>config/web.cfg</pre>
+              </li>
+              <li>
+                <b>&#28155;&#21152;&#19968;&#20010;WEB&#24212;&#29992;</b>
+                <p>&#22914;&#19979;&#20363;&#25152;&#31034;&#65292;&#22312;[url-patterns]&#19979;&#28155;&#21152;:</p>
+<pre class="literalblock">
+
+</pre>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>classes.web.TestHandler.TestHandler = /Test</pre>
+                <p>&#8220;=&#8221;&#21495;&#21069;&#38754;&#26159;&#31867;&#30340;&#22320;&#22336;&#36335;&#24452;&#12290;&#8220;=&#8221;&#21495;&#21518;&#38754;&#26159;&#31867;&#30340;URL&#26144;&#23556;&#22320;&#22336;&#12290;</p>
+                <p>web&#24212;&#29992;&#32534;&#20889;&#26041;&#27861;&#21442;&#32771;&#65306;<a 
+                href="http://sebug.net/paper/books/tornado/#_4" 
+                target="_top">http://sebug.net/paper/books/tornado/#_4</a></p>
+              </li>
+              <li>
+                <b>&#28155;&#21152;&#19968;&#20010;&#27169;&#26495;</b>
+                <p>&#22914;&#19979;&#20363;&#25152;&#31034;&#65292;&#22312;[templates]&#19979;&#28155;&#21152;:</p>
+<pre class="literalblock">
+
+</pre>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>MainHandler = templates/index.html</pre>
+                <p>&#8220;=&#8221;&#21495;&#21069;&#38754;&#26159;&#31243;&#24207;&#20869;&#24341;&#29992;&#27169;&#26495;&#30340;&#21517;&#31216;&#12290;&#8220;=&#8221;&#21495;&#21518;&#38754;&#26159;&#27169;&#26495;&#20301;&#32622;&#12290;</p>
+                <p>&#31243;&#24207;&#20869;&#24341;&#29992;&#27169;&#26495;&#31034;&#20363;:</p>
+<pre class="literalblock">
+
+</pre>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>self.render(TEMPLATES[<span class="py-string">'MainHandler'</span>], title=<span class="py-string">&quot;&#30005;&#20449;&#24494;&#20449;&#26381;&#21153;&#24179;&#21488;&quot;</span>)</pre>
+                <p>&#27169;&#26495;&#32534;&#20889;&#26041;&#27861;&#21442;&#32771;&#65306;<a 
+                href="http://sebug.net/paper/books/tornado/#_5" 
+                target="_top">http://sebug.net/paper/books/tornado/#_5</a></p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </p>
+</div><!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="main"></a><span class="summary-sig-name">main</span>()</span><br />
+      &#20027;&#20989;&#25968;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.mainServer-pysrc.html#main">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BAE_URL"></a><span class="summary-name">BAE_URL</span> = <code title="'http://telecomtest.duapp.com/'"><code class="variable-quote">'</code><code class="variable-string">http://telecomtest.duapp.com/</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MESSAGE_CONFIG_FILE"></a><span class="summary-name">MESSAGE_CONFIG_FILE</span> = <code title="'config/message.ini'"><code class="variable-quote">'</code><code class="variable-string">config/message.ini</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="wxtest.mainServer-module.html#PUSH_MSG_TYPE" class="summary-name">PUSH_MSG_TYPE</a> = <code title="{'event': 'event',
+ 'image': 'image',
+ 'link': 'link',
+ 'location': 'location',
+ 'text': 'text'}"><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">event</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">event</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">image</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">image</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">link</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="wxtest.mainServer-module.html#REPLY_MSG_TYPE" class="summary-name">REPLY_MSG_TYPE</a> = <code title="{'music': 'music', 'news': 'news', 'text': 'text'}"><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">music</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">music</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">news</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">news</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">text</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">t</code><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TEMPLATES"></a><span class="summary-name">TEMPLATES</span> = <code title="{}"><code class="variable-group">{</code><code class="variable-group">}</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TOKEN"></a><span class="summary-name">TOKEN</span> = <code title="'telecomTest'"><code class="variable-quote">'</code><code class="variable-string">telecomTest</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="WEB_CONFIG_FILE"></a><span class="summary-name">WEB_CONFIG_FILE</span> = <code title="'config/web.ini'"><code class="variable-quote">'</code><code class="variable-string">config/web.ini</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'wxtest'"><code class="variable-quote">'</code><code class="variable-string">wxtest</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES DETAILS ==================== -->
+<a name="section-VariablesDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-VariablesDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="PUSH_MSG_TYPE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">PUSH_MSG_TYPE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">event</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">event</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">image</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">image</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">link</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">link</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">location</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">location</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">text</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">text</code><code class="variable-quote">'</code><code class="variable-group">}</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="REPLY_MSG_TYPE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">REPLY_MSG_TYPE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">music</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">music</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">news</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">news</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">text</code><code class="variable-quote">'</code><code class="variable-op">: </code><code class="variable-quote">'</code><code class="variable-string">text</code><code class="variable-quote">'</code><code class="variable-group">}</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="wxtest-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://telecomtest.duapp.com">&#24494;&#20449;&#20844;&#20247;&#36134;&#21495;&#27979;&#35797;</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Aug  7 11:37:13 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

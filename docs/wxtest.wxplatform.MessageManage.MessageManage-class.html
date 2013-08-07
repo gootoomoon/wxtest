@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>wxtest.wxplatform.MessageManage.MessageManage</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="wxtest-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://telecomtest.duapp.com">&#24494;&#20449;&#20844;&#20247;&#36134;&#21495;&#27979;&#35797;</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="wxtest-module.html">Package&nbsp;wxtest</a> ::
+        <a href="wxtest.wxplatform-module.html">Package&nbsp;wxplatform</a> ::
+        <a href="wxtest.wxplatform.MessageManage-module.html">Module&nbsp;MessageManage</a> ::
+        Class&nbsp;MessageManage
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="wxtest.wxplatform.MessageManage.MessageManage-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class MessageManage</h1><p class="nomargin-top"><span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+object --+
+         |
+        <strong class="uidshort">MessageManage</strong>
+</pre>
+
+<hr />
+<p>&#28040;&#24687;&#22788;&#29702;</p>
+  <p>message.cfg&#26159;&#22238;&#22797;&#28040;&#24687;&#30340;&#37197;&#32622;&#25991;&#20214;&#12290;&#20197;[root]&#37197;&#32622;&#20026;&#20363;:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>
+<span class="py-output">[root]</span>
+<span class="py-output">command = 0</span>
+<span class="py-output">class = wxplatform.MessageManage.TextMessage</span>
+<span class="py-output">welcome = &#27426;&#36814;&#21442;&#21152;&#30005;&#20449;&#33829;&#38144;&#19982;&#26381;&#21153;&#24494;&#20449;&#24179;&#21488;&#27979;&#35797;&#65281;&#21457;&#36865;&#25351;&#20196;&#8220;0&#8221;&#65292;&#36820;&#22238;&#20027;&#33756;&#21333;&#12290;&#21457;&#36865;&#20854;&#20182;&#25968;&#23383;&#36827;&#20837;&#20854;&#20182;&#33756;&#21333;&#12290;&#24403;&#21069;&#33756;&#21333;&#22914;&#19979;&#65306;</span>
+<span class="py-output">        &#36755;&#20837;&#8220;1&#8221;&#65292;&#36827;&#20837;&#23458;&#25143;&#26381;&#21153;</span>
+<span class="py-output">        &#36755;&#20837;&#8220;2&#8221;&#65292;&#36827;&#20837;&#20248;&#24800;&#20449;&#24687;&#26597;&#35810;</span>
+<span class="py-output">        &#36755;&#20837;&#8220;3&#8221;&#65292;&#36827;&#20837;&#33829;&#19994;&#21381;&#26381;&#21153;</span></pre>
+  <p>1&#65289;command&#21644;class&#26159;&#24517;&#39035;&#37197;&#32622;&#39033;&#12290;</p>
+  <p>2&#65289;command&#26159;&#25509;&#21463;&#30340;&#28040;&#24687;&#21629;&#20196;</p>
+  <p>3&#65289;class&#26159;&#22788;&#29702;&#28040;&#24687;&#30340;&#31867;&#12290;&#22788;&#29702;&#28040;&#24687;&#31867;&#30340;&#32467;&#26500;&#26159;:</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>
+<span class="py-output">class className(object):</span>
+<span class="py-output">        def msgHandle(self,pushMsg,config): # &#26159;&#22788;&#29702;&#25552;&#20132;&#36807;&#26469;&#30340;&#28040;&#24687;&#12290;</span>
+<span class="py-output">                                                                                # pushMsg&#26159;&#25552;&#20132;&#36807;&#26469;&#30340;&#28040;&#24687;&#23545;&#35937;&#12290;</span>
+<span class="py-output">                                                                                # config&#26159;message&#30340;&#37197;&#32622;</span>
+<span class="py-output">                ...</span>
+<span class="py-output">        return replyMsg                                         # &#22238;&#22797;&#24494;&#20449;&#30340;&#28040;&#24687;&#23545;&#35937;</span></pre>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="wxtest.wxplatform.MessageManage.MessageManage-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      x.__init__(...) initializes x; see help(type(x)) for signature</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="wxtest.wxplatform.MessageManage.MessageManage-class.html#handle" class="summary-sig-name">handle</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">postStr</span>)</span><br />
+      &#22788;&#29702;&#25552;&#20132;&#36807;&#26469;&#30340;&#28040;&#24687;&#20869;&#23481;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage.handle">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_pushMsgHandle"></a><span class="summary-sig-name">_pushMsgHandle</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      &#22788;&#29702;&#25552;&#20132;&#36807;&#26469;&#30340;&#28040;&#24687;&#23545;&#35937;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._pushMsgHandle">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="wxtest.wxplatform.MessageManage.MessageManage-class.html#_getConfigSection" class="summary-sig-name" onclick="show_private();">_getConfigSection</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">command</span>)</span><br />
+      &#26681;&#25454;&#21629;&#20196;&#20174;&#28040;&#24687;&#37197;&#32622;&#25991;&#20214;&#20013;&#26597;&#25214;&#37197;&#32622;&#39033;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._getConfigSection">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="wxtest.wxplatform.MessageManage.MessageManage-class.html#_redirect" class="summary-sig-name" onclick="show_private();">_redirect</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">configSection</span>)</span><br />
+      &#36716;&#21457;&#21040;&#22238;&#22797;&#28040;&#24687;&#37197;&#32622;&#30340;&#31867;&#22788;&#29702;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._redirect">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="wxtest.wxplatform.MessageManage.MessageManage-class.html#getReplyMsg" class="summary-sig-name">getReplyMsg</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      &#36820;&#22238;&#22238;&#22797;&#24494;&#20449;&#30340;&#25991;&#26412;&#28040;&#24687;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage.getReplyMsg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="wxtest.wxplatform.MessageManage.MessageManage-class.html#_pushMsgParser" class="summary-sig-name" onclick="show_private();">_pushMsgParser</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">postStr</span>)</span><br />
+      &#23558;&#24494;&#20449;&#25512;&#36865;&#30340;&#28040;&#24687;&#35299;&#26512;&#25104;&#23545;&#35937;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._pushMsgParser">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_makeTextReplyMsg"></a><span class="summary-sig-name">_makeTextReplyMsg</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._makeTextReplyMsg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_makeNewsReplyMsg"></a><span class="summary-sig-name">_makeNewsReplyMsg</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._makeNewsReplyMsg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_makeExceptionReplyMsg"></a><span class="summary-sig-name">_makeExceptionReplyMsg</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">exception_msg</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._makeExceptionReplyMsg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="pushMsg"></a><span class="summary-name">pushMsg</span> = <code title="None">None</code><br />
+      &#24494;&#20449;&#25552;&#20132;&#36807;&#26469;&#30340;&#28040;&#24687;&#23545;&#35937;&#12290;
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="replyMsg"></a><span class="summary-name">replyMsg</span> = <code title="None">None</code><br />
+      &#36820;&#22238;&#24494;&#20449;&#30340;&#28040;&#24687;&#23545;&#35937;&#12290;
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+        <dd><em class="note">(inherited documentation)</em></dd>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="handle"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">handle</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">postStr</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage.handle">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#22788;&#29702;&#25552;&#20132;&#36807;&#26469;&#30340;&#28040;&#24687;&#20869;&#23481;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>postStr</code></strong> - &#25552;&#20132;&#36807;&#26469;&#30340;&#28040;&#24687;&#20869;&#23481;&#12290;&#28040;&#24687;&#20869;&#23481;&#24212;&#35813;&#26159;&#24494;&#20449;&#35268;&#23450;XML&#26684;&#24335;&#12290;</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_getConfigSection"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_getConfigSection</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">command</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._getConfigSection">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#26681;&#25454;&#21629;&#20196;&#20174;&#28040;&#24687;&#37197;&#32622;&#25991;&#20214;&#20013;&#26597;&#25214;&#37197;&#32622;&#39033;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>command</code></strong> - &#29992;&#25143;&#20174;&#24494;&#20449;&#21457;&#36865;&#30340;&#21629;&#20196;</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_redirect"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_redirect</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">configSection</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._redirect">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#36716;&#21457;&#21040;&#22238;&#22797;&#28040;&#24687;&#37197;&#32622;&#30340;&#31867;&#22788;&#29702;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>configSection</code></strong> - &#22238;&#22797;&#28040;&#24687;&#37197;&#32622;</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getReplyMsg"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getReplyMsg</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage.getReplyMsg">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#36820;&#22238;&#22238;&#22797;&#24494;&#20449;&#30340;&#25991;&#26412;&#28040;&#24687;</p>
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>&#31526;&#21512;&#24494;&#20449;&#35268;&#33539;&#35201;&#27714;&#30340;xml&#25991;&#26412;&#26684;&#24335;&#12290;&#25110;&#26159;&#36820;&#22238;&#31354;</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_pushMsgParser"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_pushMsgParser</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">postStr</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="wxtest.wxplatform.MessageManage-pysrc.html#MessageManage._pushMsgParser">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#23558;&#24494;&#20449;&#25512;&#36865;&#30340;&#28040;&#24687;&#35299;&#26512;&#25104;&#23545;&#35937;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>postStr</code></strong> - &#24494;&#20449;&#21457;&#26469;&#30340;POST&#35831;&#27714;&#25991;&#26412;&#20869;&#23481;</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>&#35299;&#26512;&#21518;&#30340;&#24494;&#20449;&#28040;&#24687;&#23545;&#35937;</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="wxtest-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://telecomtest.duapp.com">&#24494;&#20449;&#20844;&#20247;&#36134;&#21495;&#27979;&#35797;</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Aug  7 11:37:13 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

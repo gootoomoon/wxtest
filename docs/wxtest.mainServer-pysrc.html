@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>wxtest.mainServer</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="wxtest-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://telecomtest.duapp.com">&#24494;&#20449;&#20844;&#20247;&#36134;&#21495;&#27979;&#35797;</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="wxtest-module.html">Package&nbsp;wxtest</a> ::
+        Module&nbsp;mainServer
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="wxtest.mainServer-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="wxtest.mainServer-module.html">Module wxtest.mainServer</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment"># -*- coding:utf-8 -*-</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">"""&#24494;&#20449;WEB&#26381;&#21153;&#24179;&#21488;</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">@author: U{jinlei&lt;mailto:jinlei3@asiainfo-linkage.com&gt;}</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">@date: 2013-08-01 15:23:54</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">@Copyright: asiainfo-linkage 2013</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">@version: $Revision$</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-docstring">&#26412;&#31995;&#32479;&#21516;&#26102;&#25903;&#25345;tornado&#21644;&#30334;&#24230;&#30340;BAE&#12290;&#24403;&#21069;&#25991;&#20214;&#26159;&#20351;&#29992;tornado&#24314;&#31435;&#30340;WEB&#26381;&#21153;&#24179;&#21488;</tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-docstring">        1. B{&#36816;&#34892;WEB&#26381;&#21153;&#24179;&#21488;&#21629;&#20196;}</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt class="py-docstring">        &gt;&gt;&gt; python mainServer</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"><tt class="py-docstring">        2. B{web&#24212;&#29992;&#37197;&#32622;}</tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt class="py-docstring">                - B{&#37197;&#32622;&#25991;&#20214;}</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"><tt class="py-docstring">                &gt;&gt;&gt; config/web.cfg</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"><tt class="py-docstring">                - B{&#28155;&#21152;&#19968;&#20010;WEB&#24212;&#29992;}</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line"><tt class="py-docstring">                        &#22914;&#19979;&#20363;&#25152;&#31034;&#65292;&#22312;[url-patterns]&#19979;&#28155;&#21152;::</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"><tt class="py-docstring">                        &gt;&gt;&gt; classes.web.TestHandler.TestHandler = /Test</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line"><tt class="py-docstring">                        &#8220;=&#8221;&#21495;&#21069;&#38754;&#26159;&#31867;&#30340;&#22320;&#22336;&#36335;&#24452;&#12290;&#8220;=&#8221;&#21495;&#21518;&#38754;&#26159;&#31867;&#30340;URL&#26144;&#23556;&#22320;&#22336;&#12290;</tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"><tt class="py-docstring">                        web&#24212;&#29992;&#32534;&#20889;&#26041;&#27861;&#21442;&#32771;&#65306;U{http://sebug.net/paper/books/tornado/#_4}</tt> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"><tt class="py-docstring">                - B{&#28155;&#21152;&#19968;&#20010;&#27169;&#26495;}</tt> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"><tt class="py-docstring">                        &#22914;&#19979;&#20363;&#25152;&#31034;&#65292;&#22312;[templates]&#19979;&#28155;&#21152;::</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"><tt class="py-docstring">                        &gt;&gt;&gt; MainHandler = templates/index.html</tt> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"><tt class="py-docstring">                        &#8220;=&#8221;&#21495;&#21069;&#38754;&#26159;&#31243;&#24207;&#20869;&#24341;&#29992;&#27169;&#26495;&#30340;&#21517;&#31216;&#12290;&#8220;=&#8221;&#21495;&#21518;&#38754;&#26159;&#27169;&#26495;&#20301;&#32622;&#12290;</tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line"><tt class="py-docstring">                        &#31243;&#24207;&#20869;&#24341;&#29992;&#27169;&#26495;&#31034;&#20363;::</tt> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"><tt class="py-docstring">                        &gt;&gt;&gt; self.render(TEMPLATES['MainHandler'], title="&#30005;&#20449;&#24494;&#20449;&#26381;&#21153;&#24179;&#21488;")</tt> </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line"><tt class="py-docstring">                        &#27169;&#26495;&#32534;&#20889;&#26041;&#27861;&#21442;&#32771;&#65306;U{http://sebug.net/paper/books/tornado/#_5}</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line"> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">os</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">sys</tt> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt class="py-name">httpserver</tt> </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt class="py-name">ioloop</tt> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt class="py-name">options</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Package wxtest.wxplatform.web=wxtest.wxplatform.web-module.html"><a title="wxtest.wxplatform.web" class="py-name" href="#" onclick="return doclink('link-0', 'web', 'link-0');">web</a></tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line"> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt class="py-name">options</tt> <tt class="py-keyword">import</tt> <tt class="py-name">define</tt><tt class="py-op">,</tt> <tt class="py-name">options</tt> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line"> </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-1" class="py-name" targets="Package wxtest.wxplatform=wxtest.wxplatform-module.html"><a title="wxtest.wxplatform" class="py-name" href="#" onclick="return doclink('link-1', 'wxplatform', 'link-1');">wxplatform</a></tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Module wxtest.wxplatform.global_settings=wxtest.wxplatform.global_settings-module.html"><a title="wxtest.wxplatform.global_settings" class="py-name" href="#" onclick="return doclink('link-2', 'global_settings', 'link-2');">global_settings</a></tt> <tt class="py-keyword">import</tt> <tt class="py-op">*</tt> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-3" class="py-name"><a title="wxtest.wxplatform" class="py-name" href="#" onclick="return doclink('link-3', 'wxplatform', 'link-1');">wxplatform</a></tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Module wxtest.wxplatform.WebConfigParser=wxtest.wxplatform.WebConfigParser-module.html,Class wxtest.wxplatform.WebConfigParser.WebConfigParser=wxtest.wxplatform.WebConfigParser.WebConfigParser-class.html"><a title="wxtest.wxplatform.WebConfigParser
+wxtest.wxplatform.WebConfigParser.WebConfigParser" class="py-name" href="#" onclick="return doclink('link-4', 'WebConfigParser', 'link-4');">WebConfigParser</a></tt> <tt class="py-keyword">import</tt> <tt id="link-5" class="py-name"><a title="wxtest.wxplatform.WebConfigParser
+wxtest.wxplatform.WebConfigParser.WebConfigParser" class="py-name" href="#" onclick="return doclink('link-5', 'WebConfigParser', 'link-4');">WebConfigParser</a></tt> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-6" class="py-name"><a title="wxtest.wxplatform" class="py-name" href="#" onclick="return doclink('link-6', 'wxplatform', 'link-1');">wxplatform</a></tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Module wxtest.wxplatform.logger=wxtest.wxplatform.logger-module.html"><a title="wxtest.wxplatform.logger" class="py-name" href="#" onclick="return doclink('link-7', 'logger', 'link-7');">logger</a></tt> <tt class="py-keyword">import</tt> <tt id="link-8" class="py-name" targets="Variable wxtest.wxplatform.logger.sm_logger=wxtest.wxplatform.logger-module.html#sm_logger,Variable wxtest.wxplatform.web.MainHandler.sm_logger=wxtest.wxplatform.web.MainHandler-module.html#sm_logger,Variable wxtest.wxplatform.web.WXInterfaceHandler.sm_logger=wxtest.wxplatform.web.WXInterfaceHandler-module.html#sm_logger"><a title="wxtest.wxplatform.logger.sm_logger
+wxtest.wxplatform.web.MainHandler.sm_logger
+wxtest.wxplatform.web.WXInterfaceHandler.sm_logger" class="py-name" href="#" onclick="return doclink('link-8', 'sm_logger', 'link-8');">sm_logger</a></tt> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line"> </tt>
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line"><tt class="py-name">define</tt><tt class="py-op">(</tt><tt class="py-string">"port"</tt><tt class="py-op">,</tt> <tt class="py-name">default</tt><tt class="py-op">=</tt><tt class="py-number">8888</tt><tt class="py-op">,</tt> <tt class="py-name">help</tt><tt class="py-op">=</tt><tt class="py-string">"&#24494;&#20449;&#24179;&#21488;"</tt><tt class="py-op">,</tt> <tt class="py-name">type</tt><tt class="py-op">=</tt><tt class="py-name">int</tt><tt class="py-op">)</tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line"> </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line"><tt class="py-name">reload</tt><tt class="py-op">(</tt><tt class="py-name">sys</tt><tt class="py-op">)</tt>  </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line"><tt class="py-name">sys</tt><tt class="py-op">.</tt><tt class="py-name">setdefaultencoding</tt><tt class="py-op">(</tt><tt class="py-string">'utf8'</tt><tt class="py-op">)</tt>  </tt>
+<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line"> </tt>
+<a name="main"></a><div id="main-def"><a name="L66"></a><tt class="py-lineno">66</tt> <a class="py-toggle" href="#" id="main-toggle" onclick="return toggle('main');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="wxtest.mainServer-module.html#main">main</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="main-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="main-expanded"><a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">        <tt class="py-docstring">"""&#20027;&#20989;&#25968;"""</tt> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line">        <tt id="link-9" class="py-name"><a title="wxtest.wxplatform.logger.sm_logger
+wxtest.wxplatform.web.MainHandler.sm_logger
+wxtest.wxplatform.web.WXInterfaceHandler.sm_logger" class="py-name" href="#" onclick="return doclink('link-9', 'sm_logger', 'link-8');">sm_logger</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Method wxtest.wxplatform.logger.BAElogger.debug()=wxtest.wxplatform.logger.BAElogger-class.html#debug"><a title="wxtest.wxplatform.logger.BAElogger.debug" class="py-name" href="#" onclick="return doclink('link-10', 'debug', 'link-10');">debug</a></tt><tt class="py-op">(</tt><tt class="py-string">"**start server**"</tt><tt class="py-op">)</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line">        <tt id="link-11" class="py-name" targets="Variable wxtest.index.webConfig=wxtest.index-module.html#webConfig"><a title="wxtest.index.webConfig" class="py-name" href="#" onclick="return doclink('link-11', 'webConfig', 'link-11');">webConfig</a></tt> <tt class="py-op">=</tt> <tt id="link-12" class="py-name"><a title="wxtest.wxplatform.WebConfigParser
+wxtest.wxplatform.WebConfigParser.WebConfigParser" class="py-name" href="#" onclick="return doclink('link-12', 'WebConfigParser', 'link-4');">WebConfigParser</a></tt><tt class="py-op">(</tt><tt id="link-13" class="py-name" targets="Variable wxtest.mainServer.WEB_CONFIG_FILE=wxtest.mainServer-module.html#WEB_CONFIG_FILE,Variable wxtest.wxplatform.MessageConfigParser.WEB_CONFIG_FILE=wxtest.wxplatform.MessageConfigParser-module.html#WEB_CONFIG_FILE,Variable wxtest.wxplatform.MessageManage.WEB_CONFIG_FILE=wxtest.wxplatform.MessageManage-module.html#WEB_CONFIG_FILE,Variable wxtest.wxplatform.WebConfigParser.WEB_CONFIG_FILE=wxtest.wxplatform.WebConfigParser-module.html#WEB_CONFIG_FILE,Variable wxtest.wxplatform.global_settings.WEB_CONFIG_FILE=wxtest.wxplatform.global_settings-module.html#WEB_CONFIG_FILE,Variable wxtest.wxplatform.query.ProductInfo.WEB_CONFIG_FILE=wxtest.wxplatform.query.ProductInfo-module.html#WEB_CONFIG_FILE,Variable wxtest.wxplatform.web.MainHandler.WEB_CONFIG_FILE=wxtest.wxplatform.web.MainHandler-module.html#WEB_CONFIG_FILE,Variable wxtest.wxplatform.web.WXInterfaceHandler.WEB_CONFIG_FILE=wxtest.wxplatform.web.WXInterfaceHandler-module.html#WEB_CONFIG_FILE"><a title="wxtest.mainServer.WEB_CONFIG_FILE
+wxtest.wxplatform.MessageConfigParser.WEB_CONFIG_FILE
+wxtest.wxplatform.MessageManage.WEB_CONFIG_FILE
+wxtest.wxplatform.WebConfigParser.WEB_CONFIG_FILE
+wxtest.wxplatform.global_settings.WEB_CONFIG_FILE
+wxtest.wxplatform.query.ProductInfo.WEB_CONFIG_FILE
+wxtest.wxplatform.web.MainHandler.WEB_CONFIG_FILE
+wxtest.wxplatform.web.WXInterfaceHandler.WEB_CONFIG_FILE" class="py-name" href="#" onclick="return doclink('link-13', 'WEB_CONFIG_FILE', 'link-13');">WEB_CONFIG_FILE</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line">        <tt id="link-14" class="py-name" targets="Variable wxtest.index.urlPatterns=wxtest.index-module.html#urlPatterns,Method wxtest.wxplatform.WebConfigParser.WebConfigParser.urlPatterns()=wxtest.wxplatform.WebConfigParser.WebConfigParser-class.html#urlPatterns"><a title="wxtest.index.urlPatterns
+wxtest.wxplatform.WebConfigParser.WebConfigParser.urlPatterns" class="py-name" href="#" onclick="return doclink('link-14', 'urlPatterns', 'link-14');">urlPatterns</a></tt> <tt class="py-op">=</tt> <tt id="link-15" class="py-name"><a title="wxtest.index.webConfig" class="py-name" href="#" onclick="return doclink('link-15', 'webConfig', 'link-11');">webConfig</a></tt><tt class="py-op">.</tt><tt id="link-16" class="py-name"><a title="wxtest.index.urlPatterns
+wxtest.wxplatform.WebConfigParser.WebConfigParser.urlPatterns" class="py-name" href="#" onclick="return doclink('link-16', 'urlPatterns', 'link-14');">urlPatterns</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line">        <tt id="link-17" class="py-name"><a title="wxtest.index.webConfig" class="py-name" href="#" onclick="return doclink('link-17', 'webConfig', 'link-11');">webConfig</a></tt><tt class="py-op">.</tt><tt id="link-18" class="py-name" targets="Method wxtest.wxplatform.WebConfigParser.WebConfigParser.templates()=wxtest.wxplatform.WebConfigParser.WebConfigParser-class.html#templates"><a title="wxtest.wxplatform.WebConfigParser.WebConfigParser.templates" class="py-name" href="#" onclick="return doclink('link-18', 'templates', 'link-18');">templates</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line">        <tt class="py-name">settings</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-string">"static_path"</tt><tt class="py-op">:</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">dirname</tt><tt class="py-op">(</tt><tt class="py-name">__file__</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-string">"static"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">                                <tt class="py-string">'debug'</tt> <tt class="py-op">:</tt> <tt class="py-name">True</tt><tt class="py-op">}</tt> <tt class="py-comment"># &#35774;&#32622;static&#38745;&#24577;&#30446;&#24405;</tt> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line">        <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt class="py-name">options</tt><tt class="py-op">.</tt><tt class="py-name">parse_command_line</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">        <tt id="link-19" class="py-name"><a title="wxtest.index.urlPatterns
+wxtest.wxplatform.WebConfigParser.WebConfigParser.urlPatterns" class="py-name" href="#" onclick="return doclink('link-19', 'urlPatterns', 'link-14');">urlPatterns</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-string">r"/(.*)"</tt><tt class="py-op">,</tt> <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt id="link-20" class="py-name"><a title="wxtest.wxplatform.web" class="py-name" href="#" onclick="return doclink('link-20', 'web', 'link-0');">web</a></tt><tt class="py-op">.</tt><tt class="py-name">StaticFileHandler</tt><tt class="py-op">,</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-name">path</tt><tt class="py-op">=</tt><tt class="py-name">settings</tt><tt class="py-op">[</tt><tt class="py-string">'static_path'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line">        <tt id="link-21" class="py-name" targets="Variable wxtest.index.application=wxtest.index-module.html#application"><a title="wxtest.index.application" class="py-name" href="#" onclick="return doclink('link-21', 'application', 'link-21');">application</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt id="link-22" class="py-name"><a title="wxtest.wxplatform.web" class="py-name" href="#" onclick="return doclink('link-22', 'web', 'link-0');">web</a></tt><tt class="py-op">.</tt><tt class="py-name">Application</tt><tt class="py-op">(</tt><tt id="link-23" class="py-name"><a title="wxtest.index.urlPatterns
+wxtest.wxplatform.WebConfigParser.WebConfigParser.urlPatterns" class="py-name" href="#" onclick="return doclink('link-23', 'urlPatterns', 'link-14');">urlPatterns</a></tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">settings</tt><tt class="py-op">)</tt> </tt>
+<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line">        <tt class="py-name">http_server</tt> <tt class="py-op">=</tt> <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt class="py-name">httpserver</tt><tt class="py-op">.</tt><tt class="py-name">HTTPServer</tt><tt class="py-op">(</tt><tt id="link-24" class="py-name"><a title="wxtest.index.application" class="py-name" href="#" onclick="return doclink('link-24', 'application', 'link-21');">application</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line"> </tt>
+<a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line">        <tt class="py-name">http_server</tt><tt class="py-op">.</tt><tt class="py-name">listen</tt><tt class="py-op">(</tt><tt class="py-name">options</tt><tt class="py-op">.</tt><tt class="py-name">port</tt><tt class="py-op">)</tt> </tt>
+<a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line">        <tt class="py-name">tornado</tt><tt class="py-op">.</tt><tt class="py-name">ioloop</tt><tt class="py-op">.</tt><tt class="py-name">IOLoop</tt><tt class="py-op">.</tt><tt class="py-name">instance</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">start</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L81"></a><tt class="py-lineno">81</tt>  <tt class="py-line"> </tt>
+<a name="L82"></a><tt class="py-lineno">82</tt>  <tt class="py-line"><tt class="py-keyword">if</tt> <tt class="py-name">__name__</tt> <tt class="py-op">==</tt> <tt class="py-string">"__main__"</tt><tt class="py-op">:</tt> </tt>
+<a name="L83"></a><tt class="py-lineno">83</tt>  <tt class="py-line">        <tt id="link-25" class="py-name" targets="Function wxtest.mainServer.main()=wxtest.mainServer-module.html#main"><a title="wxtest.mainServer.main" class="py-name" href="#" onclick="return doclink('link-25', 'main', 'link-25');">main</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L84"></a><tt class="py-lineno">84</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="wxtest-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://telecomtest.duapp.com">&#24494;&#20449;&#20844;&#20247;&#36134;&#21495;&#27979;&#35797;</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Aug  7 11:37:14 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
