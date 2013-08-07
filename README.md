@@ -66,7 +66,7 @@ python mainServer
 
 	* 配置文件
 
-		config/web.cfg
+		* config/web.cfg
 
 	* 在配置文件中添加一个WEB应用
 
