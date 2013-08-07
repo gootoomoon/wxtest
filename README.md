@@ -2,30 +2,43 @@ wxtest
 ======
 
 微信公众账号测试平台
-本系统同时支持tornado和百度的BAE。当前文件是使用tornado建立的WEB服务平台
+本系统同时支持tornado和百度的BAE。
 
-#运行WEB服务平台命令
->>> python mainServer
-##web应用配置
-配置文件
->>> config/web.cfg
-添加一个WEB应用
-如下例所示，在[url-patterns]下添加:
+使用tornado建立的WEB服务平台
+=========================
 
->>> classes.web.TestHandler.TestHandler = /Test
-“=”号前面是类的地址路径。“=”号后面是类的URL映射地址。
+运行WEB服务平台命令
+------------------
 
-web应用编写方法参考：http://sebug.net/paper/books/tornado/#_4
+python mainServer
 
-##添加一个模板
-如下例所示，在[templates]下添加:
+web应用配置
+------------
+* 配置文件
 
+	config/web.cfg
 
->>> MainHandler = templates/index.html
-“=”号前面是程序内引用模板的名称。“=”号后面是模板位置。
+* 添加一个WEB应用
 
-##程序内引用模板示例:
+	如下例所示，在[url-patterns]下添加:
 
->>> self.render(TEMPLATES['MainHandler'], title="电信微信服务平台")
-模板编写方法参考：http://sebug.net/paper/books/tornado/#_5
+	classes.web.TestHandler.TestHandler = /Test
+	
+	“=”号前面是类的地址路径。“=”号后面是类的URL映射地址。
+
+	web应用编写方法参考：http://sebug.net/paper/books/tornado/#_4
+
+* 添加一个模板
+
+	如下例所示，在[templates]下添加:
+
+	MainHandler = templates/index.html
+
+	“=”号前面是程序内引用模板的名称。“=”号后面是模板位置。
+
+* 程序内引用模板示例
+
+	self.render(TEMPLATES['MainHandler'], title="电信微信服务平台")	
+
+	模板编写方法参考：http://sebug.net/paper/books/tornado/#_5
 
